@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Admissions Consultancy Landing Page</title>
+    <title>Campus India Admissions</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
@@ -20,7 +20,7 @@
         theme: {
           extend: {
             colors: {
-              primary: "#4f46e5", // Updated to a sophisticated Indigo
+              primary: "#4f46e5", // Sophisticated Indigo
               secondary: "#0ea5e9", // Sky blue accent
               "accent-gold": "#d97706", // Elegant amber
               "accent-rose": "#e11d48", // Deep rose
@@ -58,7 +58,7 @@
         }
       }
     </style>
-    <script src="services-data.js"></script>
+    <script src="universities-data.js"></script>
   </head>
   <body
     class="bg-background-light text-slate-800 font-display overflow-x-hidden"
@@ -69,7 +69,10 @@
       >
         <div class="mx-auto max-w-[1280px] px-4 md:px-10">
           <div class="flex h-20 items-center justify-between">
-            <div class="flex items-center gap-3 text-slate-900">
+            <div
+              class="flex items-center gap-3 text-slate-900 cursor-pointer"
+              onclick="window.location.href='#'"
+            >
               <div class="size-9 text-primary">
                 <svg
                   fill="currentColor"
@@ -95,11 +98,6 @@
                   href="index.html"
                   >Home</a
                 >
-                <a
-                  class="text-slate-600 hover:text-primary text-sm font-semibold transition-colors"
-                  href="admissions.html"
-                  >India &amp; Overseas Admissions</a
-                >
               </nav>
               <a
                 class="flex cursor-pointer items-center justify-center rounded-full h-11 px-6 bg-primary hover:bg-indigo-600 text-white text-sm font-bold transition-all shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40"
@@ -111,205 +109,202 @@
           </div>
         </div>
       </header>
-      <section class="relative w-full overflow-hidden">
-        <div
-          class="absolute inset-0 z-0 h-[850px] w-full origin-center scale-105"
-          data-alt="Students studying together in a modern university library"
-          style="
-            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTaJw2rW0YBuWSnSPMkRGmUrEWTxhrAaUSxgeZNI-1w6a_1hN8lClxjA4siMyqHGlgJWR6E7PdovLLSU0qqgH9AClmfzqUAn7QOjZw5CIxkkq0MVKh6AnzxJWaAJPcliw_lzmI4PlpZ0bumPTheUCCETqeOi3TtB-uWw5xi6hIyVnpHZl0JjNpv010jY1zEKJ9J7VvZCyV9GjEN3A58PD6YrBCmS9TMcY4Umn6n8xUzQrL5gqCHBWJm53niZg3TL_YO5_aOG8JRUfl');
-            background-size: cover;
-            background-position: center top;
-          "
-        ></div>
-        <div
-          class="absolute inset-0 z-10 h-[850px] bg-gradient-to-r from-white via-white/80 to-transparent w-full md:w-[70%]"
-        ></div>
-        <div
-          class="absolute bottom-0 left-0 right-0 z-20 h-32 bg-gradient-to-t from-background-light to-transparent"
-        ></div>
-        <div
-          class="relative z-30 mx-auto flex min-h-[75vh] max-w-[1280px] items-center px-4 py-20"
+      <main class="flex-grow w-full">
+        <section
+          class="relative py-20 lg:py-28 w-full overflow-hidden bg-background-light"
         >
           <div
-            class="flex max-w-[680px] flex-col gap-8 animate-fade-in pl-2 md:pl-6"
+            class="absolute top-0 right-0 -translate-y-12 translate-x-12 w-[600px] h-[600px] bg-indigo-100/40 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-[500px] h-[500px] bg-rose-100/30 rounded-full blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="relative z-10 mx-auto max-w-[1280px] px-4 md:px-10 text-center"
           >
             <div
-              class="inline-flex w-fit items-center gap-2 rounded-full border border-indigo-100 bg-white/50 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary backdrop-blur-sm shadow-sm"
+              class="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/60 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary backdrop-blur-md shadow-sm mb-8"
             >
               <span
                 class="flex h-2 w-2 rounded-full bg-primary animate-pulse"
               ></span>
-              Global Education Partner
+              Admissions Open 2024
             </div>
             <h1
-              class="text-slate-900 text-5xl font-black leading-[1.1] tracking-[-0.033em] md:text-7xl drop-shadow-sm"
+              class="text-slate-900 text-4xl font-black leading-tight tracking-tight md:text-5xl lg:text-6xl mb-6"
             >
-              Your Gateway to <br />
-              <span class="elegant-gradient-text">World-Class Success</span>
+              Your Gateway to Top
+              <span class="elegant-gradient-text">Indian Universities</span>
             </h1>
-            <h2
-              class="text-slate-600 font-body text-lg font-normal leading-relaxed md:text-xl pr-10"
+            <p
+              class="text-slate-600 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-10"
             >
-              Expert guidance for university admissions, visa processing, and
-              your future abroad. We navigate the complexities so you can focus
-              on your dreams.
-            </h2>
-            <div class="mt-4 flex flex-wrap gap-4">
-              <a
-                href="admissions.html"
-                class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary hover:bg-indigo-600 text-white text-base font-bold transition-all shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5"
-              >
-                Start Your Journey
-              </a>
-              <a
-                href="#mentor-section"
-                class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-base font-bold transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
-              >
-                Meet the Counselor
-              </a>
-            </div>
-            <!-- <div
-              class="mt-8 flex items-center gap-6 text-sm font-medium text-slate-500"
+              Discover premier educational institutions across India. Get expert
+              guidance and seamless admission support for your academic future.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <div class="flex -space-x-3">
-                <div
-                  class="h-10 w-10 rounded-full border-2 border-white bg-slate-200"
-                ></div>
-                <div
-                  class="h-10 w-10 rounded-full border-2 border-white bg-slate-300"
-                ></div>
-                <div
-                  class="h-10 w-10 rounded-full border-2 border-white bg-slate-400"
-                ></div>
-                <div
-                  class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-slate-100 text-xs text-slate-600 font-bold"
+              <button
+                class="h-12 px-8 rounded-full bg-primary hover:bg-indigo-600 text-white font-bold transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 flex items-center gap-2"
+                onclick="document.querySelector('.py-20.bg-background-light').scrollIntoView({behavior: 'smooth'})"
+              >
+                Explore Universities
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_downward</span
                 >
-                  +2k
-                </div>
-              </div>
-              <p>Trusted by students worldwide</p>
-            </div> -->
-          </div>
-        </div>
-      </section>
-      <section class="relative z-30 bg-background-light py-24">
-        <div class="mx-auto max-w-[1280px] px-4 md:px-10">
-          <div
-            class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6"
-          >
-            <div class="max-w-[600px]">
-              <h2
-                class="text-slate-900 text-3xl font-bold leading-tight md:text-5xl tracking-tight mb-4"
+              </button>
+              <button
+                class="h-12 px-8 rounded-full bg-white border border-slate-200 hover:border-primary/30 text-slate-700 hover:text-primary font-bold transition-all hover:bg-slate-50 flex items-center gap-2"
               >
-                Crafting Your <span class="text-primary">Academic Future</span>
+                Free Counseling
+                <span class="material-symbols-outlined text-sm"
+                  >support_agent</span
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="relative z-20 -mt-8 px-4 md:px-10">
+          <div class="mx-auto max-w-2xl">
+            <div
+              class="bg-white p-2 rounded-full shadow-soft flex items-center border border-slate-100 focus-within:ring-2 focus-within:ring-primary/20 transition-all"
+            >
+              <div class="pl-4 text-slate-400">
+                <span class="material-symbols-outlined">search</span>
+              </div>
+              <input
+                id="search-input"
+                class="w-full border-none bg-transparent py-3 px-4 text-slate-700 placeholder-slate-400 focus:ring-0 text-base font-body"
+                placeholder="Search for universities, cities, or courses..."
+                type="text"
+              />
+              <button
+                class="bg-slate-900 hover:bg-primary text-white p-3 rounded-full transition-colors"
+                onclick="searchUniversities(document.getElementById('search-input').value)"
+              >
+                <span class="material-symbols-outlined text-xl"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-background-light">
+          <div class="mx-auto max-w-[1280px] px-4 md:px-10">
+            <div class="flex items-center justify-between mb-10">
+              <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+                Featured Universities
               </h2>
-              <p class="text-slate-600 text-lg font-light leading-relaxed">
-                Comprehensive support tailored to your unique profile and
-                aspirations, moving beyond the ordinary.
-              </p>
-            </div>
-            <!-- <a
-              class="group hidden md:flex items-center gap-2 font-bold text-primary hover:text-indigo-700 transition-colors"
-              href="#"
-            >
-              View all services
-              <span
-                class="material-symbols-outlined transition-transform group-hover:translate-x-1"
-                >arrow_forward</span
-              >
-            </a> -->
-          </div>
-          <div
-            id="services-grid"
-            class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
-          >
-            <!-- Service cards will be dynamically generated here by JavaScript -->
-          </div>
-          <!-- <div class="mt-12 md:hidden flex justify-center">
-            <a
-              class="btn btn-outline flex items-center gap-2 font-bold text-primary"
-              href="#"
-            >
-              View all services
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div> -->
-        </div>
-      </section>
-      <section
-        id="mentor-section"
-        class="bg-white py-24 relative overflow-hidden"
-      >
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"
-        ></div>
-        <div class="mx-auto max-w-[1024px] px-4 md:px-10 relative z-10">
-          <div
-            class="flex flex-col md:flex-row items-center gap-12 lg:gap-20 rounded-[2.5rem] bg-gradient-to-br from-slate-50 to-white p-8 md:p-14 border border-slate-100 shadow-soft"
-          >
-            <div class="shrink-0 relative">
-              <div
-                class="absolute -inset-4 rounded-full border border-dashed border-slate-200 animate-spin-slow"
-                style="animation-duration: 20s"
-              ></div>
-              <div
-                class="relative h-64 w-64 md:h-80 md:w-80 overflow-hidden rounded-[2rem] shadow-2xl shadow-indigo-100"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
-                  data-alt="Professional portrait of the senior admission counselor smiling warmly"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjbBAWB1odJDsM7zE6Y5vrho1zPaptq4mzMuXOdSfEnciUVlzaeUVTb-lercGK4aixVxne-Dj7zZkM14K1-pdp02yAmjoF1aiQwI-mdgxt5wmOmlbr3WTBlHzbCIxCjBd0kIkxdyZ704y-LYk8PcruJSj1BWlfy3okAQC_cK6ihGXTJ_AJ5NztJ7iEWLi13WmDmtU1_asMXzPH2BsgnB_0cBnTyml7o27qxnD-t3IYrvfZq4GAo9hAA7IrIcH1tzpZnccWzIy29I3b');
-                  "
-                ></div>
-              </div>
-            </div>
-            <div class="flex flex-col text-center md:text-left">
-              <div
-                class="mb-4 inline-flex items-center justify-center md:justify-start gap-2 text-primary font-bold tracking-wide uppercase text-xs"
-              >
-                <span
-                  class="flex h-6 w-6 items-center justify-center rounded-full bg-indigo-100 text-primary"
-                >
-                  <span class="material-symbols-outlined text-sm"
-                    >verified</span
-                  >
-                </span>
-                <span>Head Counselor</span>
-              </div>
-              <h2
-                class="text-slate-900 text-3xl md:text-4xl font-bold leading-tight tracking-tight mb-4"
-              >
-                Meet Your Mentor
-              </h2>
-              <h3 class="text-xl text-slate-900 font-medium mb-6">
-                GV Manu Reddy,
-                <span class="text-slate-500 text-base font-normal"
-                  >B.Tech. Saveetha University</span
-                >
-              </h3>
-              <p class="text-slate-600 text-lg leading-relaxed mb-8 font-light">
-                "With over 12 years of experience in international education,
-                I've dedicated my career to helping students navigate the
-                complex landscape of global university admissions. My approach
-                is personal, strategic, and deeply invested in your long-term
-                success."
-              </p>
-              <div class="flex justify-center md:justify-start">
+              <div class="flex gap-2">
                 <button
-                  class="flex items-center gap-3 text-white bg-slate-900 hover:bg-primary rounded-full px-6 py-3 text-sm font-semibold transition-all shadow-lg hover:shadow-indigo-500/20 group"
+                  class="p-2 rounded-lg bg-white border border-slate-200 text-slate-500 hover:text-primary hover:border-primary transition-colors"
+                  title="Filter options coming soon"
                 >
-                  <span>Read full bio</span>
-                  <span
-                    class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform"
-                    >arrow_forward</span
-                  >
+                  <span class="material-symbols-outlined">filter_list</span>
+                </button>
+                <button
+                  class="p-2 rounded-lg bg-white border border-slate-200 text-slate-500 hover:text-primary hover:border-primary transition-colors"
+                  title="Sort options coming soon"
+                >
+                  <span class="material-symbols-outlined">sort</span>
                 </button>
               </div>
             </div>
+            <div
+              id="universities-grid"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
+            >
+              <!-- University cards will be dynamically generated here by JavaScript -->
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="px-8 py-3 bg-white border border-slate-200 rounded-full text-slate-600 font-bold hover:bg-slate-50 hover:text-primary hover:border-primary/30 transition-all shadow-sm"
+              >
+                Load more universities
+              </button>
+            </div>
           </div>
+        </section>
+        <section class="py-16 px-4 md:px-10 bg-white">
+          <div class="mx-auto max-w-4xl">
+            <div
+              class="relative overflow-hidden rounded-3xl bg-slate-900 px-6 py-16 shadow-2xl sm:px-16 sm:py-24 lg:flex lg:items-center lg:gap-x-20"
+            >
+              <div
+                class="absolute top-0 left-0 -translate-y-12 -translate-x-12 w-64 h-64 bg-primary/30 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="absolute bottom-0 right-0 translate-y-12 translate-x-12 w-64 h-64 bg-secondary/30 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div class="relative z-10 text-center lg:text-left">
+                <h2
+                  class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                >
+                  Unsure which university to choose?
+                </h2>
+                <p class="mt-4 text-lg leading-relaxed text-slate-300">
+                  Book a free counseling session with our experts to find the
+                  perfect match for your career goals.
+                </p>
+                <div class="mt-8 flex justify-center lg:justify-start">
+                  <a
+                    class="rounded-full bg-white px-8 py-3.5 text-base font-bold text-slate-900 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all"
+                    href="#"
+                  >
+                    Book Free Counseling
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- <footer class="bg-white py-12 border-t border-slate-200">
+        <div
+          class="mx-auto max-w-[1280px] px-4 md:px-10 flex flex-col items-center justify-center gap-8"
+        >
+          <div class="flex flex-col items-center gap-2">
+            <div class="flex items-center gap-2 text-slate-900">
+              <div class="size-6 text-primary">
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <span class="text-xl font-bold tracking-tight"
+                >Campus<span class="text-primary">India</span></span
+              >
+            </div>
+          </div>
+          <div class="flex items-center gap-8">
+            <a
+              class="text-slate-500 hover:text-primary transition-colors"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="text-slate-500 hover:text-primary transition-colors"
+              href="#"
+              >Terms of Service</a
+            >
+            <a
+              class="text-slate-500 hover:text-primary transition-colors"
+              href="#"
+              >Contact</a
+            >
+          </div>
+          <p class="text-slate-400 text-sm">
+            © 2024 Campus India Admissions. All rights reserved.
+          </p>
         </div>
-      </section>
+      </footer> -->
       <section class="bg-slate-50 py-16 border-t border-slate-200">
         <div
           class="mx-auto max-w-[1280px] px-4 md:px-10 flex flex-col items-center justify-center gap-10"
@@ -339,7 +334,7 @@
           <div class="flex items-center gap-8">
             <a
               class="group flex flex-col items-center gap-3"
-              href="https://wa.me/918790020625"
+              href="https://wa.me/919876543210"
               title="WhatsApp"
             >
               <div
@@ -410,10 +405,23 @@
             </a>
           </div>
           <p class="text-slate-400 text-sm mt-8">
-            © 2025 Admissions Consultancy. All rights reserved.
+            © 2024 Admissions Consultancy. All rights reserved.
           </p>
         </div>
       </section>
     </div>
+    <script>
+      // Add search on Enter key
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.getElementById("search-input");
+        if (searchInput) {
+          searchInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+              searchUniversities(searchInput.value);
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
