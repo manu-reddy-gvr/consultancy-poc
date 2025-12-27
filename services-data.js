@@ -211,10 +211,10 @@ const colorSchemes = {
 // Function to create a service card element
 function createServiceCard(service) {
   const colors = service.colorScheme;
-  
+
   const card = document.createElement('div');
   card.className = `group relative flex flex-col gap-6 rounded-3xl bg-white p-8 transition-all duration-500 hover:-translate-y-2 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.05),0_10px_20px_-2px_rgba(0,0,0,0.01)] ${colors.hoverShadow} border border-slate-100 overflow-hidden`;
-  
+
   card.innerHTML = `
     <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 translate-y-[-40%] rounded-full ${colors.blurBg} blur-3xl transition-all ${colors.blurHover}"></div>
     <div class="relative flex h-16 w-16 items-center justify-center rounded-2xl ${colors.bgGradient} ${colors.textColor} transition-all duration-300 ${colors.hoverBg} group-hover:text-white group-hover:shadow-lg ${colors.shadowColor}">
@@ -229,22 +229,22 @@ function createServiceCard(service) {
       </p>
     </div>
   `;
-  
+
   return card;
 }
 
 // Function to render all services
 function renderServices(services = servicesData, containerId = 'services-grid') {
   const container = document.getElementById(containerId);
-  
+
   if (!container) {
     console.error(`Container with id "${containerId}" not found`);
     return;
   }
-  
+
   // Clear existing content
   container.innerHTML = '';
-  
+
   // Create and append cards
   services.forEach(service => {
     const card = createServiceCard(service);
